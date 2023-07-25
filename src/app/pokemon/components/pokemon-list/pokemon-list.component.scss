@@ -1,0 +1,37 @@
+.pokemon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #6b727a;
+  color: #ffffff;
+  padding: 0 5px;
+  cursor: pointer;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  min-height: 70px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.15s ease-in-out;
+}
+
+.pokemon:hover {
+  background-color: #46494d;
+  transform: scale(1.05);
+}
+
+.pokemon__imagem {
+  width: 25%;
+  border-radius: 50%;
+}
+
+.pokemon__nome {
+  text-transform: capitalize;
+  padding-right: 10px;
+}
+
+.pokemon__numero {
+  color: whitesmoke;
+  font-size: 10px;
+  margin-top: 10px;
+  align-self: flex-start;
+}

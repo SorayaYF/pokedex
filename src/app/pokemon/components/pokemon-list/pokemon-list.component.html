@@ -1,0 +1,10 @@
+<a class="pokemon" *ngIf="pokemon.id" routerLink="/pokemon/{{ pokemon.id }}">
+  <img
+    class="pokemon__imagem"
+    loading="lazy"
+    [src]="'../../../assets/gifs/' + pokemon.name + '.gif'"
+    [alt]="pokemon.name"
+  />
+  <span class="pokemon__nome"> {{ pokemon.name }} </span>
+  <span class="pokemon__numero"> #{{ pokemonZeros(pokemon.id) }} </span>
+</a>

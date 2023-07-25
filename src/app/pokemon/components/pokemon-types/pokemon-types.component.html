@@ -1,0 +1,68 @@
+<div class="type-cards">
+  <div class="pokemon__types" *ngFor="let type of types">
+    <div class="pokemon__type">
+      <div class="pokemon__type__title">
+        <span class="type" [class]="'pokemon__tipo--' + type.name"
+          ><img
+            [src]="'../../../assets/icons/types/' + type.name + '.png'"
+            alt=""
+          />
+          {{ type.name }}
+        </span>
+      </div>
+
+      <div class="weakness" *ngIf="type.doubleDamageFrom.length != 0">
+        <h2 class="pokemon__relation__title">Weakness</h2>
+        <div class="pokemon__types__relative">
+          <span
+            class="type"
+            *ngFor="let value of type.doubleDamageFrom"
+            [class]="'pokemon__tipo--' + value.name"
+          >
+            <img
+              [src]="'../../../assets/icons/types/' + value.name + '.png'"
+              alt=""
+            />
+            {{ value.name }}
+          </span>
+        </div>
+      </div>
+
+      <div class="resistances" *ngIf="type.halfDamageFrom.length != 0">
+        <h2 class="pokemon__relation__title">Resistances</h2>
+        <div class="pokemon__types__relative">
+          <span
+            class="type"
+            *ngFor="let value of type.halfDamageFrom"
+            [class]="'pokemon__tipo--' + value.name"
+          >
+            <img
+              [src]="'../../../assets/icons/types/' + value.name + '.png'"
+              alt=""
+            />
+            {{ value.name }}
+          </span>
+        </div>
+      </div>
+
+      <div class="imunities" *ngIf="type.noDamageFrom.length != 0">
+        <h2 class="pokemon__relation__title">Imunities</h2>
+        <div class="pokemon__types__relative">
+          <span
+            class="type"
+            *ngFor="let value of type.noDamageFrom"
+            [class]="'pokemon__tipo--' + value.name"
+          >
+            <img
+              [src]="'../../../assets/icons/types/' + value.name + '.png'"
+              alt=""
+            />
+            {{ value.name }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<a class="link-button" routerLink="/">Voltar para lista</a>

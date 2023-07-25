@@ -1,0 +1,144 @@
+.type-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pokemon__type__title {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pokemon__types {
+  width: 230px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.pokemon__relation__title {
+  text-transform: capitalize;
+  padding: 5px;
+}
+
+.pokemon__types__relative {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: space-around;
+}
+
+.type {
+  text-transform: capitalize;
+  display: flex;
+  gap: 3px;
+  width: 85px;
+  font-size: 12px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 2px 10px;
+  box-shadow: rgba(100, 100, 101, 0.2) 0px 7px 29px 0px;
+  margin-bottom: 0.25rem;
+  align-items: center;
+  color: #ffffff;
+}
+
+.type img {
+  width: 20px;
+  height: 20px;
+}
+
+.pokemon__tipo--grass {
+  background-color: #7ac74c;
+}
+
+.pokemon__tipo--poison {
+  background-color: #b97fc9;
+}
+
+.pokemon__tipo--fire {
+  background-color: #ee8130;
+}
+
+.pokemon__tipo--flying {
+  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+  background-color: #3dc7ef;
+  color: #212121;
+}
+
+.pokemon__tipo--water {
+  background-color: #4592c4;
+}
+
+.pokemon__tipo--bug {
+  background-color: #729f3f;
+}
+
+.pokemon__tipo--normal {
+  background-color: #a4acaf;
+}
+
+.pokemon__tipo--electric {
+  background-color: #eed535;
+}
+
+.pokemon__tipo--ground {
+  background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+  color: black;
+}
+
+.pokemon__tipo--fairy {
+  background-color: #fdb9e9;
+}
+
+.pokemon__tipo--fighting {
+  background-color: #d56723;
+}
+
+.pokemon__tipo--psychic {
+  background-color: #f366b9;
+}
+
+.pokemon__tipo--rock {
+  background-color: #a38c21;
+}
+
+.pokemon__tipo--steel {
+  background-color: #9eb7b8;
+}
+
+.pokemon__tipo--ice {
+  background-color: #51c4e7;
+}
+
+.pokemon__tipo--ghost {
+  background-color: #7b62a3;
+}
+
+.pokemon__tipo--dragon {
+  background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+}
+
+.pokemon__tipo--dark {
+  background-color: #707070;
+}
+
+.link-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: #6b727a;
+  color: #ffffff;
+  padding: 0 5px;
+  border-radius: 30px;
+  min-height: 70px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 0.15s ease-in-out;
+}
+
+.link-button:hover {
+  background-color: #46494d;
+  transform: scale(1.05);
+}
