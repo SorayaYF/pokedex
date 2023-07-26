@@ -1,27 +1,9 @@
 # Pokedex
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.3.
+Pokedex em Angular, para treinar o consumo de API
 
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![Captura de tela 2023-07-26 165046](https://github.com/SorayaYF/pokedex/assets/110129579/714a3a13-b00e-4004-a35a-2f7b1241360f)
+![Captura de tela 2023-07-26 165210](https://github.com/SorayaYF/pokedex/assets/110129579/1bad35a8-0b1c-4be1-9fa1-1b8a34247a5e)
+![Captura de tela 2023-07-26 165241](https://github.com/SorayaYF/pokedex/assets/110129579/15596beb-4f41-405c-80c3-1833a7aaba28)
+![Captura de tela 2023-07-26 165327](https://github.com/SorayaYF/pokedex/assets/110129579/ff80a7ee-19b4-44bf-ae8e-0c6cc1fbe8ac)
+![Captura de tela 2023-07-26 165402](https://github.com/SorayaYF/pokedex/assets/110129579/33f23ead-a01f-43d1-93aa-22499ca8a4ac)
