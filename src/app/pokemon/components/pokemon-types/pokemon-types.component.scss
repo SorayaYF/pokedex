@@ -14,7 +14,7 @@
   padding: 10px;
   border-radius: 10px;
   background-color: #ffffff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
 }
 
 .pokemon__relation__title {
@@ -38,7 +38,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   padding: 2px 10px;
-  box-shadow: rgba(100, 100, 101, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
   margin-bottom: 0.25rem;
   align-items: center;
   color: #ffffff;
@@ -129,16 +129,20 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 10px;
-  background-color: #6b727a;
+  background-color: rgb(71, 70, 70);
   color: #ffffff;
   padding: 0 5px;
   border-radius: 30px;
   min-height: 70px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
   transition: 0.15s ease-in-out;
 }
 
 .link-button:hover {
-  background-color: #46494d;
   transform: scale(1.05);
+  filter: brightness(0.5);
+}
+
+a {
+  text-decoration: none;
 }

@@ -4,16 +4,37 @@
   padding: 30px 0;
 }
 
-.listagem {
-  max-width: 200px;
-  padding: 10px;
+.procurar {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  padding: 10px;
+}
+
+.listagem {
+  padding: 10px;
 }
 
 .pokemons {
-  width: 250px;
-  max-height: 710px;
+  max-width: 1700px;
+  max-height: 900px;
   overflow: hidden;
   overflow-y: scroll;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+label {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+
+main {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

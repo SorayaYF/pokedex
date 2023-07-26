@@ -10,6 +10,7 @@ export class PokemonService {
   private baseUrl = 'https://pokeapi.co/api/v2/';
   private listOfPokemons = 151;
   private allPokemonsUrl = `https://pokeapi.co/api/v2/pokemon?limit=${this.listOfPokemons}/`;
+  private allTypesUrl = 'https://pokeapi.co/api/v2/type/';
 
   constructor(private httpClient: HttpClient) {}
 
@@ -48,5 +49,9 @@ export class PokemonService {
 
   public onLoadMore() {
     this.listOfPokemons += 151;
+  }
+
+  public listAllTypes(): Observable<any> {
+    return this.httpClient.get<any>(this.allTypesUrl);
   }
 }

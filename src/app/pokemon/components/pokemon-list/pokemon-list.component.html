@@ -1,4 +1,9 @@
-<a class="pokemon" *ngIf="pokemon.id" routerLink="/pokemon/{{ pokemon.id }}">
+<a
+  class="pokemon"
+  [class]="'pokemon__tipo--' + pokemon.types[0].type.name"
+  *ngIf="pokemon.id"
+  routerLink="/pokemon/{{ pokemon.id }}"
+>
   <img
     class="pokemon__imagem"
     loading="lazy"

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Pokemon } from '../../models/pokemon';
 import { PokemonService } from '../../services/pokemon.service';
+import { PokemonType } from '../../models/pokemon-type';
 
 @Component({
   selector: 'app-pokemon',
@@ -29,5 +30,18 @@ export class PokemonComponent implements OnInit {
     });
 
     this.getAllPokemons = filter;
+  }
+
+  getTypeSearch(type: string) {
+    if (type === 'all') {
+      this.getAllPokemons = this.setAllPokemons;
+    } else if (type) {
+      const filter = this.setAllPokemons.filter((res: any) => {
+        return res.types.some((t: any) => t.type.name === type);
+      });
+      this.getAllPokemons = filter;
+    } else {
+      this.getAllPokemons = this.setAllPokemons;
+    }
   }
 }

@@ -1,4 +1,4 @@
-<main>
+<main [class]="'pokemon__tipo--' + pokemon.types[0].type.name">
   <div class="pokemon-atual" *ngIf="isLoading">
     <div class="cartoes-pokemon">
       <div

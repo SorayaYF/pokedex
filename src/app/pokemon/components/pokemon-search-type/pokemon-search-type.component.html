@@ -1,0 +1,10 @@
+<div class="search">
+  <select
+    class="search-type__select"
+    [(ngModel)]="selectedType"
+    (ngModelChange)="searchByType()"
+  >
+    <option value="all">All</option>
+    <option *ngFor="let type of types" [value]="type">{{ type }}</option>
+  </select>
+</div>

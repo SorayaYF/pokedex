@@ -1,15 +1,21 @@
 <main>
   <div class="pokedex">
+    <div class="procurar">
+      <label>Procurar por nome</label>
+      <app-pokemon-search
+        (emmitSearch)="getSearch($event)"
+      ></app-pokemon-search>
+      <label>Procurar por tipo</label>
+      <app-pokemon-search-type
+        (emmitTypeSearch)="getTypeSearch($event)"
+      ></app-pokemon-search-type>
+    </div>
     <div class="pokemons">
-      <nav class="listagem">
-        <app-pokemon-search
-          (emmitSearch)="getSearch($event)"
-        ></app-pokemon-search>
-        <app-pokemon-list
-          *ngFor="let pokemon of getAllPokemons"
-          [pokemon]="pokemon"
-        ></app-pokemon-list>
-      </nav>
+      <ng-container *ngFor="let pokemon of getAllPokemons">
+        <div class="listagem">
+          <app-pokemon-list [pokemon]="pokemon"></app-pokemon-list>
+        </div>
+      </ng-container>
     </div>
     <router-outlet></router-outlet>
   </div>

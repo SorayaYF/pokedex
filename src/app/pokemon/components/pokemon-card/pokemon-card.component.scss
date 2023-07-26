@@ -4,7 +4,7 @@
 }
 
 .cartao-pokemon {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
 
@@ -155,4 +155,12 @@
 
 .pokemon__tipo--dark {
   background-color: #707070;
+}
+
+main {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
